@@ -5,8 +5,9 @@ services:
     stdin_open: true
     tty: true
     # 必要に応じて適宜プロジェクトをマウント
-    # volumes:
-    #   -
+    volumes:
+      - .ssh:/root/.ssh
+      - .aws:/root/.aws
     cap_add:
       - NET_ADMIN
     command: /bin/bash -c 'service docker start; /bin/bash'
