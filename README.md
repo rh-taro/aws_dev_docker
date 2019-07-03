@@ -1,6 +1,7 @@
 # Usage
 ## 0. prepare credentials file to `.aws` directory
-and prepare ssh key to `.ssh` directory if you need ssh key 
+- and prepare ssh key to `.ssh` directory if you need ssh key 
+- and write docker-compose.yml volume section and mount project if you need 
 
 ## 1. start docker & execute bash on docker
 ```
@@ -19,7 +20,6 @@ $ docker-compose exec aws bash
 ```
 
 - awsebcli
-before, write docker-compose.yml volume section and mount project 
 
 ```
 # cd path/to/project
@@ -31,4 +31,5 @@ before, write docker-compose.yml volume section and mount project
 
 ```
 # $(aws ecr get-login --no-include-email --region ap-northeast-1)
+# docker build *****.....
 ```
