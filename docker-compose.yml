@@ -1,0 +1,13 @@
+version: '3'
+services:
+  aws:
+    build: .
+    stdin_open: true
+    tty: true
+    # 必要に応じて適宜プロジェクトをマウント
+    # volumes:
+    #   -
+    cap_add:
+      - NET_ADMIN
+    command: /bin/bash -c 'service docker start; /bin/bash'
+    

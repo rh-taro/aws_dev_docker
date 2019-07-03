@@ -1,0 +1,7 @@
+/.aws/*
+!/.aws/config.example
+!/.aws/credentials.example
+!/.aws/.keep
+
+/.ssh/*
+!/.ssh/.keep
